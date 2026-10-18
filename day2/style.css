@@ -1,0 +1,191 @@
+/* 1. Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* 2. Base body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f6f9;
+}
+
+/* 3. Header */
+header {
+  background-color: #5b3cc4;
+  color: white;
+  text-align: center;
+  padding: 32px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 8px 0 20px;
+}
+
+/* 4. Navigation with Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #382078;
+}
+
+/* 5. Main content */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* 6. White card sections */
+section {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+main > h2,
+main > p {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 7. Features list with CSS Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  background-color: #eee9ff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d6ccff;
+}
+
+/* 8. Keyboard shortcuts table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee9ff;
+}
+
+/* 9. Feedback form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* 10. Buttons with transitions */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5b3cc4;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #382078;
+  transform: translateY(-2px);
+}
+
+/* 11. Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+/* 12. Responsive design for phones */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 12px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  main {
+    margin: 16px auto;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
